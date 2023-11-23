@@ -1,0 +1,34 @@
+{
+  "Navbar": {
+    "welcome": "Xoş gəlmisiniz",
+    "home": "Əsas səhifə",
+    "skills": "Bacarıqlar",
+    "projects": "Layihələr",
+    "certificates": "Sertifikatlar",
+    "downloadCV": "CV-ni yüklə"
+  },
+  "Banner": {
+    "Greeting": "Salam! Mən Yusif",
+    "welcomeText": "Portfelime xoş gəlmisiniz",
+    "myJob": "Salam! Mən Cavad, Veb İnkişafçısıyam",
+    "JobAbout": "Dijital Dünyanın Arxasındakı Səhrin Yaradıcılığını Yaradıram! İnternetin gücündən istifadə edərək istifadəçi təcrübələrini artırır, istifadəçi dostu veb saytlar və tətbiqlər dizayn edirəm. HTML, CSS, JavaScript və digər texnologiyalar ilə yaratıcılığıma həyata keçirir, istifadəçilərin tələblərinə cavab verən unikal həllər təqdim edirəm. Onlayn sahədə müstəqil bir iz qoymaq və layihələrinizi həyata keçirmək üçün buradayam. Səhifəmi tədqiq edin və yaradıcılığımı əldən görün!",
+    "letsConnect": "Əlaqə Qurmaq"
+  },
+  "Skills": {
+    "mainText": "Bacarıqlar",
+    "aboutText": "Mən problemləri həll etməkdən, istifadəçi təcrübələrini yaxşılaşdırmadan və bilik və bacarıqlarımı istifadə edərək maraqlı layihələrin bir hissəsi olmaqdan zövq alıram."
+  },
+  "Project": {
+    "mainText": "Proyektlər",
+    "aboutText": "Mənim layihələrim funksional və estetika arasında davamsız bir təmiz dəstək əldə etmək məqsədi güdür. Həyata keçirdiyim texnologiya həllərim sadəcə praktik deyil, həm də estetika və müasir çəkicilik əks etdirir. Hər layihə, bu harmonik qarışıma nail olmağın şahidi olaraq, təmin edilən həllərin həm işləyən və həm də müasir kontekstdə görsəl cəzb etkisi yaratmasını təmin edir."
+  },
+  "Contact": {
+    "newsletterText": "Bizim bülletenə abunə olun və ən son yenilikləri əldə edin",
+    "emailPlaceholder": "E-poçt ünvanı",
+    "submitButton": "Göndər"
+  },
+  "Footer": {
+    "name": "Yusif Hüseynov",
+    "copyright": "Tüm Hüquqlar Qorunur 2023"
+  }
+}

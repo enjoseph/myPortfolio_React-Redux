@@ -1,0 +1,33 @@
+{
+  "Navbar": {
+    "home": "Ana Sayfa",
+    "skills": "Yetenekler",
+    "projects": "Projeler",
+    "certificates": "Sertifikalar",
+    "downloadCV": "CV İndir"
+  },
+  "Banner": {
+    "Greeting": "Merhaba! Ben Joseph",
+    "welcomeText": "Portföyüme Hoşgeldiniz",
+    "myJob": "Merhaba! Ben Joseph, Web Geliştiriciyim",
+    "JobAbout": "Dijital Dünya Arkasındaki Sihri Yaratıyorum! İnternetin gücünü kullanarak kullanıcı deneyimlerini geliştiriyorum, kullanıcı dostu web siteleri ve uygulamalar tasarlıyorum. HTML, CSS, JavaScript ve diğer teknolojilerle yaratıcılığımı hayata geçiriyorum ve kullanıcıların ihtiyaçlarına uygun benzersiz çözümler sunuyorum. Online dünyada belirgin bir iz bırakmak ve projelerinizi hayata geçirmek için buradayım. Sayfamı keşfedin ve yaratıcılığımı ilk elden görün!",
+    "letsConnect": "Bağlantı Kurun"
+  },
+  "Skills": {
+    "mainText": "Yetenekler",
+    "aboutText": "Problemleri çözmekten, kullanıcı deneyimlerini geliştirmekten ve bilgi ve becerilerimi kullanarak heyecan verici projelerin bir parçası olmaktan keyif alıyorum."
+  },
+  "Project": {
+    "mainText": "Projeler",
+    "aboutText": "Projelerim, işlevsellik ve estetik arasında sorunsuz bir denge sağlamayı amaçlar. Uyguladığım teknolojik çözümler sadece pratik değil, aynı zamanda estetik ve çağdaş bir çekiciliği de içselleştirir. Her proje, bu uyumlu karışımın peşindeki bir şahittir ve sunulan çözümlerin hem işlevsel hem de görsel olarak çekici olmasını sağlar, modern bir bağlamda."
+  },
+  "Contact": {
+    "newsletterText": "Bültenimize abone olun ve en güncel güncellemeleri kaçırmayın",
+    "emailPlaceholder": "E-posta Adresi",
+    "submitButton": "Gönder"
+  },
+  "Footer": {
+    "name": "Yusif Hüseynov",
+    "copyright": "Tüm Hakları Saklıdır 2023"
+  }
+}

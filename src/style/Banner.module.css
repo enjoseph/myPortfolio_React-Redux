@@ -1,0 +1,103 @@
+.container {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    justify-content:end;
+    height: 100vh;
+    padding: 5vh 0 5vh 3vh;
+}
+
+.text {
+    width: 50%;
+    height: 50vh;
+}
+
+
+.text h5 {
+    border: 1px solid whitesmoke;
+    width: max-content;
+    padding: 1.5vh 2vh;
+    margin-bottom: 4vh;
+
+}
+
+.welcomeText {
+    backdrop-filter: blur(3px);
+    background-color: transparent;
+}
+
+.myJob {
+    font-size: 8vh;
+    margin-bottom: 2vh;
+    font-family: monospace;
+    height: 20vh;
+    width: 90%;
+}
+
+.JobAbout {
+    line-height: 1.5;
+    font-family: monospace;
+    font-size: 2vh;
+    color: rgb(187, 187, 187);
+}
+
+
+.text a {
+    color: white;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    margin: 5vh 0;
+    font-weight: 600;
+    font-family: cursive;
+}
+
+.text a span {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 0.6vh 0.8vh;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    height: max-content;
+    margin-left: 1vh;
+
+    font-family: monospace
+}
+
+
+.headerImage {
+    width: 49%;
+    text-align: end;
+    display: flex;
+    justify-content: flex-end
+}
+
+
+.headerImage img {
+    animation: jumping 2s ease-in-out infinite;
+    position: relative; 
+}
+
+
+
+@keyframes jumping {
+    0% {
+        bottom: 0;
+        left: 0;
+
+    }
+
+    50% {
+        bottom: 20px;
+        left: 20px;
+    }
+
+    100% {
+        bottom: 0;
+        left: 0;
+
+    }
+}

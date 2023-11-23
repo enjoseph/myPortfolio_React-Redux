@@ -1,0 +1,36 @@
+.container {
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10vh 5vh 10vh;
+    align-items: end;
+    background: linear-gradient(to bottom, black , rgb(59, 1, 59));
+}
+
+.contactUS ul {
+    display: flex;
+    width: max-content;
+}
+
+.contactUS ul li {
+    font-size: 2.5vh;
+    margin: 0 1vh;
+    border: 1px solid lightgray;
+    background-color: rgb(34, 34, 34);
+    border-radius: 50%;
+    padding: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container  h5 {
+    font-size: 5vh;
+    font-family: monospace;
+    font-weight: 100;
+}
+
+.contactUS p {
+    margin-top: 2vh;
+    font-family: monospace;
+}

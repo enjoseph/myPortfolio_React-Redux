@@ -1,0 +1,33 @@
+{
+    "Navbar": {
+        "home": "Home",
+        "skills": "Skills",
+        "projects": "Projects",
+        "certificates": "Certificates",
+        "downloadCV": "Download CV"
+    },
+    "Banner": {
+        "Greeting": "Hi! I'm Joseph",
+        "welcomeText": "Welcome to My Portfolio",
+        "myJob": "Hi! I'm Joseph Web Developer",
+        "JobAbout": "Crafting the Magic Behind the Digital World! I harness the power of the internet to enhance user experiences, designing user-friendly websites and applications. I breathe life into my creativity with HTML, CSS, JavaScript, and other technologies, delivering unique solutions that cater to users' needs. I'm here to leave a distinct mark in the online realm and bring your projects to life. Explore my page and witness my creativity firsthand!",
+        "letsConnect": "Lets Connect"
+      },
+      "Skills": {
+        "mainText": "Skills",
+        "aboutText": "I enjoy solving problems, enhancing user experiences, and being a part of exciting projects using my knowledge and skills."
+      },
+      "Project": {
+        "mainText": "Projects",
+        "aboutText": "My projects aim to achieve a seamless balance between functionality and aesthetics. The technological solutions I implement are not only practical but also embody an aesthetic and contemporary appeal. Each project is a testament to the pursuit of this harmonious blend, ensuring that the solutions provided are both utilitarian and visually compelling in a modern context."
+      },
+      "Contact": {
+        "newsletterText": "Subscribe to our Newsletter & Never miss latest updates",
+        "emailPlaceholder": "Email Address",
+        "submitButton": "Submit"
+      },
+      "Footer": {
+        "name": "Yusif Hüseynov",
+        "copyright": "Copyright 2023. All Rights Reserved"
+      } 
+}

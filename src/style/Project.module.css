@@ -1,0 +1,116 @@
+.container {
+    width: 80%;
+    padding: 5vh 3vh 20vh 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 7vh auto;
+}
+
+
+.mainText {
+    font-size: 6vh;
+    line-height: 2;
+    font-family: monospace;
+    color: rgb(221, 221, 221);
+
+}
+
+
+.aboutText {
+    color: rgb(187, 187, 187);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 3vh 0;
+    text-align: center;
+}
+
+.linkTab {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    border-radius: 5vh;
+    margin: 5vh 0;
+}
+
+
+.linkTab a {
+    width: 33%;
+    text-align: center;
+    padding: 2vh 0;
+    border-radius: 5vh;
+    border: 2px solid #757575;
+    transition: .6s;
+    cursor: pointer;
+}
+
+
+.linkTab a:hover {
+    background: linear-gradient(to bottom, black, rgb(59, 1, 59), black);
+    transition: 1s;
+    border: 2px solid rgb(59, 1, 59);
+}
+
+
+.linkTab a:not(:first-child):not(:last-child) {
+    border-radius: 0;
+}
+
+.linkTab a:first-child {
+    border-radius: 5vh 0 0 5vh;
+}
+
+
+.linkTab a:last-child {
+    border-radius: 0 5vh 5vh 0;
+}
+
+
+
+.myProject {
+    width: 25%;
+    height: 25vh;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 1vh;
+    margin: 0 2vh;
+    transition: box-shadow 0.2s ease-in-out;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s ease-in-out;
+}
+
+.myProject:hover {
+    scale: 1.1;
+}
+
+.myProjects {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vh;
+    row-gap: 4vh;
+    justify-content: center;
+}
+
+.viewProject {
+    width: 100%;
+    border-radius: 15px;
+    height: 100%;
+    /* pointer-events: none; */
+}
+
+.textContainer {
+    width: 80%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.textContainer h5 {
+    font-size: 5vh;
+    font-weight: 600;
+
+}
+
+

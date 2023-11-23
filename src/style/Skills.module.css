@@ -1,0 +1,215 @@
+.container {
+    width: 80%;
+    border-radius: 5vh;
+    padding: 5vh 3vh 0 3vh;
+    background-color: rgba(12, 12, 12, 0.699);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 7vh auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.mainText {
+    font-size: 6vh;
+    line-height: 2;
+    font-family: monospace;
+    color: rgb(185, 185, 185);
+
+}
+
+.aboutText {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(187, 187, 187);
+    font-size: 2vh;
+
+}
+
+.skillsBox {
+    width: 100%;
+    margin: 10vh 0;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    cursor: pointer;
+    height: 45vh;
+    width: 85%;
+}
+
+
+
+
+
+
+  .inActive  {
+    scale: 0;
+    transition: 0.6s;
+  }
+
+
+  .Active  {
+    display:flex !important;
+    scale: 1 !important;
+    transition: 0.6s;
+  }
+
+
+  .card  {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(12, 12, 12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 55px;
+    z-index: 1;
+    border-radius: 15px;
+    pointer-events: none;
+    display: none;
+  }
+  
+  
+  .percent  {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    padding: 1vh;
+    transform: rotateZ(270deg);
+  }
+  
+  
+  .percent svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    padding: 1vh;
+    z-index: 10;
+  
+  }
+  
+  
+  .percent svg circle {
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width:5 ;
+    stroke: #191919;
+  }
+  
+  .card h2  {
+    color:#a531a5;
+    position: absolute;
+  }
+  
+  .card h2  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card h2 span:first-child {
+  margin-left: 10px;
+  }
+  
+  .card h2 span:last-child {
+  font-size: 15px;
+  color: #525252;
+  }
+  
+  .card h2 sup {
+    color:#f38df5;
+  }
+  
+  
+  .percent svg circle:nth-child(2){
+    stroke: #f38df5;
+    box-shadow: 0 0 10px #f38df5,
+    0 0 30px #f38df5;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    transition: 1s;
+  }
+  
+  
+  .percent circle {
+    pointer-events: none;
+  }
+  
+
+.imgContainer  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+
+.skillsName {
+    color: #827e86;
+    line-height: 3;
+    font-size: 3vh;
+    font-family: monospace;
+    pointer-events: none;
+
+}
+
+
+
+.skillsImage {
+    transition: all 0.5s;
+    cursor: pointer;
+    position: relative;
+    margin-top: 1vh;
+    pointer-events: none;
+}
+
+.skillImage {
+    transition: all 0.5s;
+    cursor: pointer;
+    position: relative;
+    margin-top: 1vh;
+    pointer-events: none;
+}
+
+
+.box:hover .skillsImage {
+    animation: jumping 0.8s ease-in-out infinite;
+
+}
+
+
+.rotateAnimation {
+    transform: rotateX(360deg);
+    transition: 1s;
+    visibility: hidden;
+}
+
+
+
+
+
+@keyframes jumping {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-1vh);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
