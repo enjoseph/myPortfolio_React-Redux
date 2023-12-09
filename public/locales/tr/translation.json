@@ -29,5 +29,9 @@
   "Footer": {
     "name": "Yusif Hüseynov",
     "copyright": "Tüm Hakları Saklıdır 2023"
+  },
+
+  "AboutModal": {
+    "Message": "Kalıcı pencere açıkken, tıklayarak kolayca geri dönebilirsiniz."
   }
 }

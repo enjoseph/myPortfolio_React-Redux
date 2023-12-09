@@ -7,6 +7,7 @@ import { setCurrentProject } from "../stores/projectsSlice";
 import { useTranslation } from "react-i18next";
 
 export default function Project(props) {
+  console.log('Rendering Projects');
 
   const { t } = useTranslation();
 

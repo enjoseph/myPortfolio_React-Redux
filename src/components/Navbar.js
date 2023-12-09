@@ -5,13 +5,14 @@ import { useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
+  console.log("Rendering Navbar");
   const { CV } = useSelector((state) => state.document);
   const { language } = useSelector((state) => state.language);
   const { t, i18n } = useTranslation();
 
   const clickHandle = (lang) => {
     i18n.changeLanguage(lang);
-    localStorage.setItem('language', lang);
+    localStorage.setItem("language", lang);
   };
 
   return (
@@ -72,30 +73,53 @@ export default function Navbar() {
             </motion.div>
           </a>
           <a href={CV} download>
-            <li className={NavbarStyle.connect_BTN}>{t("Navbar.downloadCV")}</li>
+            <li className={NavbarStyle.connect_BTN}>
+              {t("Navbar.downloadCV")}
+            </li>
           </a>
         </ul>
+      </div>
 
-        <div className={NavbarStyle.languageContainer}>
-          <div className={NavbarStyle.language}>
-            <ul>
-              <li>
-                <img onClick={() => clickHandle("en")} title={language.en.lang} src={language.en.IMG} alt="" style={{ width: '30px', height: '30px' }} />
-              </li>
-              
-              
-              
-              <li>
-                <img onClick={() => clickHandle("az")} title={language.az.lang} src={language.az.IMG} alt="" style={{ width: '30px', height: '30px' }} />
-              </li>
-              <li>
-                <img onClick={() => clickHandle("ru")} title={language.ru.lang} src={language.ru.IMG} alt="" style={{ width: '30px', height: '30px' }} />
-              </li>
-              <li>
-                <img onClick={() => clickHandle("tr")} title={language.tr.lang} src={language.tr.IMG} alt="" style={{ width: '30px', height: '30px' }} />
-              </li>
-            </ul>
-          </div>
+      <div className={NavbarStyle.languageContainer}>
+        <div className={NavbarStyle.language}>
+          <ul>
+            <li>
+              <img
+                onClick={() => clickHandle("en")}
+                title={language.en.lang}
+                src={language.en.IMG}
+                alt=""
+                style={{ width: "30px", height: "30px" }}
+              />
+            </li>
+            <li>
+              <img
+                onClick={() => clickHandle("az")}
+                title={language.az.lang}
+                src={language.az.IMG}
+                alt=""
+                style={{ width: "30px", height: "30px" }}
+              />
+            </li>
+            <li>
+              <img
+                onClick={() => clickHandle("ru")}
+                title={language.ru.lang}
+                src={language.ru.IMG}
+                alt=""
+                style={{ width: "30px", height: "30px" }}
+              />
+            </li>
+            <li>
+              <img
+                onClick={() => clickHandle("tr")}
+                title={language.tr.lang}
+                src={language.tr.IMG}
+                alt=""
+                style={{ width: "30px", height: "30px" }}
+              />
+            </li>
+          </ul>
         </div>
       </div>
     </motion.div>

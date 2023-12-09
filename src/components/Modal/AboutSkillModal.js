@@ -3,8 +3,13 @@ import AboutModalStyle from "../../style/Modal/AboutSkillModal.module.css";
 import { motion } from "framer-motion";
 import { setCurrentSkills } from "../../stores/skillsSlice";
 import { useDispatch, useSelector } from "react-redux";
+import { useTranslation } from "react-i18next";
 
-export default function () {
+export default function AboutSkillModal() {
+
+  console.log('Rendering AboutSkillModal');
+
+  const {t} = useTranslation()
   const dispatch = useDispatch();
 
   const { currentSkills } = useSelector((state) => state.skills);
@@ -44,8 +49,7 @@ export default function () {
         className={AboutModalStyle.modalMain}
       >
         <h5>
-          While the modal window is open, you can easily return by clicking
-          outside of it. <i className="fa-regular fa-lightbulb"></i>
+        {t('AboutModal.Message')} <i className="fa-regular fa-lightbulb"></i>
         </h5>
 
         <div className={AboutModalStyle.container}>

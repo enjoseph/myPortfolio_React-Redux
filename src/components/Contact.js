@@ -4,6 +4,9 @@ import ContactPNG from "../assets/contactComponent/contactPNG.png";
 import { useTranslation } from "react-i18next";
 
 export default function Contact() {
+
+console.log('Rendering Contact');
+
   const { t } = useTranslation()
 
   return (

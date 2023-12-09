@@ -11,6 +11,7 @@ import { useTranslation } from "react-i18next";
 
 export default function Skills() {
   const { t } = useTranslation();
+  console.log('Rendering Skills');
 
 
   //  Multi Carousel

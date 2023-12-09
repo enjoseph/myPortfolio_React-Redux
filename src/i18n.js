@@ -10,7 +10,7 @@ i18n
 .use(Backend)
 .use(LanguageDetector)
 .init ( {
-    lng : 'en',
+    fallbackLng : 'en',
 })
 
 

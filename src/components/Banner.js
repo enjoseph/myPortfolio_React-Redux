@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 export default function Banner() {
+
   const text = "Hi! I'm Joseph Web Developer";
   const [bannerText, set_bannerText] = useState("");
   const [loopNum, set_loopNum] = useState(0);
@@ -54,16 +55,16 @@ export default function Banner() {
         transition={{ duration: 1, delay: 1 }}
         className={BannerStyle.text}
       >
-        <h5 className={BannerStyle.welcomeText}>{t('Banner.welcomeText')}</h5>
+        <h5 className={BannerStyle.welcomeText}>{t("Banner.welcomeText")}</h5>
         <h1 className={BannerStyle.myJob}>
           <span>
             {bannerText} <i className="fa-solid fa-i-cursor fa-fade"></i>
           </span>
         </h1>
-        <p className={BannerStyle.JobAbout}>{t('Banner.JobAbout')}</p>
+        <p className={BannerStyle.JobAbout}>{t("Banner.JobAbout")}</p>
         <br />
         <a href="#Contact">
-          {t('Banner.letsConnect')} <span>&#10147;</span>
+          {t("Banner.letsConnect")} <span>&#10147;</span>
         </a>
       </motion.div>
 

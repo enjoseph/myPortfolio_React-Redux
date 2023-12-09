@@ -3,10 +3,11 @@ import AboutProjectModalStyle from "../../style/Modal/AboutProjectModal.module.c
 import { motion } from "framer-motion";
 import { useDispatch, useSelector } from "react-redux";
 import {setCurrentProject} from '../../stores/projectsSlice'
+import { useTranslation } from "react-i18next";
 
 export default function AboutProjectModal() {
   const { currentProject } = useSelector((state) => state.projects);
-
+  console.log('Rendering AboutProjectModal');
   const container = {
     hidden: { opacity: 1, scale: 0 },
     visible: {
@@ -18,6 +19,8 @@ export default function AboutProjectModal() {
       },
     },
   };
+
+  const{t} = useTranslation()
 
   const item = {
     hidden: { y: 20, opacity: 0 },
@@ -44,8 +47,7 @@ export default function AboutProjectModal() {
     >
       <div className={AboutProjectModalStyle.modalMain}>
         <h5>
-          While the modal window is open, you can easily return by clicking
-          outside of it. <i className="fa-regular fa-lightbulb"></i>
+          {t('AboutModal.Message')} <i className="fa-regular fa-lightbulb"></i>
         </h5>
 
         <div className={AboutProjectModalStyle.projectName}>

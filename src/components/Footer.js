@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 
 
 export default function Footer() {
+  console.log('Rendering Footer');
 
   const {t} = useTranslation()
 

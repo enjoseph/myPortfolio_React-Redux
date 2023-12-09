@@ -29,5 +29,9 @@
       "Footer": {
         "name": "Yusif Hüseynov",
         "copyright": "Copyright 2023. All Rights Reserved"
-      } 
+      } ,
+
+      "AboutModal": {
+        "Message": "While the modal window is open, you can easily return by clicking."
+      }
 }
