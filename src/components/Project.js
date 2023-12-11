@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import ProjectStyle from "../style/Project.module.css";
 import AboutProjectModal from "./Modal/AboutProjectModal";
+import TabComponent from "./TabComponent";
+
 import { motion } from "framer-motion";
 import { useDispatch, useSelector } from "react-redux";
 import { setCurrentProject } from "../stores/projectsSlice";
 import { useTranslation } from "react-i18next";
 
-export default function Project(props) {
-  console.log('Rendering Projects');
-
+export default function Project() {
   const { t } = useTranslation();
 
   const dispatch = useDispatch();
@@ -18,34 +18,20 @@ export default function Project(props) {
 
   const TabFix = projects.length / 6 > 3 ? projects.length / 6 : 3;
   const [tab, set_tab] = useState(TabFix);
-  const [isActive, set_isActive] = useState(1);
+  const { isActive } = useSelector((state) => state.projects);
 
-
-
-  const renderTab = () => {
-    const tabs = [];
-    for (let i = 1; i <= tab; i++) {
-      tabs.push(
-        <a
-          key={i}
-          onClick={() => {
-            set_isActive(i);
-          }}
-          id={i}
-        >
-          Tab {i}
-        </a>
-      );
-    }
-    return tabs;
-  };
+  const loop = Array.from({ length: tab }, (_, index) => index + 1);
 
   return (
     <section className={ProjectStyle.container} id="ProjectID">
       <h5 className={ProjectStyle.mainText}>{t("Project.mainText")}</h5>
       <p className={ProjectStyle.aboutText}>{t("Project.aboutText")}</p>
 
-      <div className={ProjectStyle.linkTab}>{renderTab()}</div>
+      <div className={ProjectStyle.linkTab}>
+        {loop.map((index) => {
+          return (<TabComponent key={index} index={index}></TabComponent>)
+        })}
+      </div>
 
       <div className={ProjectStyle.myProjects}>
         {isActive === 1 ? (
@@ -74,9 +60,7 @@ export default function Project(props) {
         )}
       </div>
 
-      {currentProject !== undefined ? (
-        <AboutProjectModal></AboutProjectModal>
-      ) : null}
+      {currentProject ? <AboutProjectModal /> : null}
     </section>
   );
 }

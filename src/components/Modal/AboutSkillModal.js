@@ -6,13 +6,11 @@ import { useDispatch, useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
 
 export default function AboutSkillModal() {
-
+  const dispatch = useDispatch();
+  const { currentSkills } = useSelector((state) => state.skills);
   console.log('Rendering AboutSkillModal');
 
   const {t} = useTranslation()
-  const dispatch = useDispatch();
-
-  const { currentSkills } = useSelector((state) => state.skills);
 
   const [counter, set_counter] = useState(0);
   const [skillLVL, set_skillLVL] = useState(currentSkills.lvl);
@@ -32,7 +30,9 @@ export default function AboutSkillModal() {
       helperCounter();
     }, 20);
 
-    if (currentSkills.lvl === counter) clearTimeout(counterCall);
+    if (currentSkills.lvl === counter) 
+
+    return () =>  clearTimeout(counterCall);
   });
 
   return (

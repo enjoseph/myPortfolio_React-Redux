@@ -87,16 +87,20 @@ export const projectsSlice = createSlice({
         view: HangManPNG,
         githubLink: "https://github.com/enjoseph/React_HangMan",
       },
-    ]
+    ],
+    isActive: 1
   },
 
   reducers: {
     setCurrentProject : (state, action) => { 
         state.currentProject = action.payload
+    },
+    setIsActive : (state, action) => { 
+      state.isActive = action.payload
     }
   },
 });
 
-export const {setCurrentProject} = projectsSlice.actions;
+export const {setCurrentProject , setIsActive} = projectsSlice.actions;
 
 export default projectsSlice.reducer;

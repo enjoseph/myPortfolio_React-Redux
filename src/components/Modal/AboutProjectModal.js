@@ -1,4 +1,3 @@
-import React from "react";
 import AboutProjectModalStyle from "../../style/Modal/AboutProjectModal.module.css";
 import { motion } from "framer-motion";
 import { useDispatch, useSelector } from "react-redux";
@@ -20,8 +19,7 @@ export default function AboutProjectModal() {
     },
   };
 
-  const{t} = useTranslation()
-
+  
   const item = {
     hidden: { y: 20, opacity: 0 },
     visible: {
@@ -29,7 +27,8 @@ export default function AboutProjectModal() {
       opacity: 1,
     },
   };
-
+  const{t} = useTranslation()
+  
   const dispatch = useDispatch()
 
 
@@ -68,7 +67,7 @@ export default function AboutProjectModal() {
             })}
           </motion.ul>
         </div>
-        {currentProject.githubLink === "" ? (
+        {!currentProject.githubLink ? (
           <a>
             {
               "I cannot share the github link due to company confidentiality. :("

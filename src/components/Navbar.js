@@ -1,14 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import NavbarStyle from "../style/Navbar.module.css";
 import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
 
+import EN from "../assets/navbarComponent/eng.png";
+import AZ from "../assets/navbarComponent/aze.png";
+import RU from "../assets/navbarComponent/rus.png";
+import TR from "../assets/navbarComponent/tr.png";
+
 export default function Navbar() {
   console.log("Rendering Navbar");
+
   const { CV } = useSelector((state) => state.document);
-  const { language } = useSelector((state) => state.language);
+
+  const language = [
+    {
+      lang: "en",
+      IMG: EN,
+    },
+    {
+      lang: "az",
+      IMG: AZ,
+    },
+    {
+      lang: "ru",
+      IMG: RU,
+    },
+    {
+      lang: "tr",
+      IMG: TR,
+    },
+  ];
+
+  const [lang, setLanguage] = useState(language);
+
   const { t, i18n } = useTranslation();
+
+  const navItem = ["home", "skills", "projects", "certificates"];
 
   const clickHandle = (lang) => {
     i18n.changeLanguage(lang);
@@ -30,18 +59,17 @@ export default function Navbar() {
       {/* Navigation */}
       <div className={NavbarStyle.navItem}>
         <ul>
-          <motion.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
-            <a href="">{t("Navbar.home")}</a>
-          </motion.li>
-          <motion.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
-            <a href="#SkillsID">{t("Navbar.skills")}</a>
-          </motion.li>
-          <motion.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
-            <a href="#ProjectID">{t("Navbar.projects")}</a>
-          </motion.li>
-          <motion.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
-            <a href="#ProjectID">{t("Navbar.certificates")}</a>
-          </motion.li>
+          {navItem.map((item, index) => {
+            return (
+              <motion.li
+                key={index}
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.8 }}
+              >
+                <a href="">{t(`Navbar.${item}`)}</a>
+              </motion.li>
+            );
+          })}
         </ul>
 
         <ul>
@@ -83,45 +111,50 @@ export default function Navbar() {
       <div className={NavbarStyle.languageContainer}>
         <div className={NavbarStyle.language}>
           <ul>
-            <li>
-              <img
-                onClick={() => clickHandle("en")}
-                title={language.en.lang}
-                src={language.en.IMG}
-                alt=""
-                style={{ width: "30px", height: "30px" }}
-              />
-            </li>
-            <li>
-              <img
-                onClick={() => clickHandle("az")}
-                title={language.az.lang}
-                src={language.az.IMG}
-                alt=""
-                style={{ width: "30px", height: "30px" }}
-              />
-            </li>
-            <li>
-              <img
-                onClick={() => clickHandle("ru")}
-                title={language.ru.lang}
-                src={language.ru.IMG}
-                alt=""
-                style={{ width: "30px", height: "30px" }}
-              />
-            </li>
-            <li>
-              <img
-                onClick={() => clickHandle("tr")}
-                title={language.tr.lang}
-                src={language.tr.IMG}
-                alt=""
-                style={{ width: "30px", height: "30px" }}
-              />
-            </li>
+            {lang.map((lang) => {
+              return (
+                <li>
+                  <img
+                    onClick={() => clickHandle("en")}
+                    title={lang.lang}
+                    src={lang.IMG}
+                    alt=""
+                    style={{ width: "30px", height: "30px" }}
+                  />
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>
     </motion.div>
   );
 }
+
+// <li>
+// <img
+//   onClick={() => clickHandle("az")}
+//   title={lang.az.lang}
+//   src={lang.az.IMG}
+//   alt=""
+//   style={{ width: "30px", height: "30px" }}
+// />
+// </li>
+// <li>
+// <img
+//   onClick={() => clickHandle("ru")}
+//   title={lang.ru.lang}
+//   src={lang.ru.IMG}
+//   alt=""
+//   style={{ width: "30px", height: "30px" }}
+// />
+// </li>
+// <li>
+// <img
+//   onClick={() => clickHandle("tr")}
+//   title={lang.tr.lang}
+//   src={lang.tr.IMG}
+//   alt=""
+//   style={{ width: "30px", height: "30px" }}
+// />
+// </li>

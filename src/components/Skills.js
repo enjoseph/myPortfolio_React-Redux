@@ -11,7 +11,6 @@ import { useTranslation } from "react-i18next";
 
 export default function Skills() {
   const { t } = useTranslation();
-  console.log('Rendering Skills');
 
 
   //  Multi Carousel
@@ -59,11 +58,11 @@ export default function Skills() {
   };
   return (
     <section className={SkillsStyle.container} id="SkillsID">
-    {currentCategory !== undefined ? (
+    {currentCategory ? (
       <i className="fa-solid fa-left-long fa-bounce" onClick={closeSkill}></i>
     ) : undefined}
     <h1 className={SkillsStyle.mainText}>
-      {currentCategory === undefined ? t("Skills.mainText") : currentCategory}
+      {!currentCategory ? t("Skills.mainText") : currentCategory}
     </h1>
     <p className={SkillsStyle.aboutText}>{t("Skills.aboutText")}</p>
     <Carousel
@@ -72,7 +71,7 @@ export default function Skills() {
       className={SkillsStyle.skillsBox}
     >
       {skills.map((skills, index) => {
-        if (currentCategory === undefined) {
+        if (!currentCategory ) {
           return (
             <motion.div
               key={skills.id}
@@ -118,7 +117,7 @@ export default function Skills() {
                 }}
               >
                 <div className={SkillsStyle.imgContainer}>
-                  {element.icon !== undefined ? (
+                  {element.icon ? (
                     <img
                       className={SkillsStyle.skillsImage}
                       src={element.icon}
@@ -135,8 +134,8 @@ export default function Skills() {
         }
       })}
     </Carousel>
-    {currentSkills !== undefined ? (
-      <AboutModal></AboutModal>
+    {currentSkills ? (
+      <AboutModal/>
     ) : null}
   </section>
 );
