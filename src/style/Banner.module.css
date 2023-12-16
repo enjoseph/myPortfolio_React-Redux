@@ -85,8 +85,10 @@
 }
 
 .myJob span {
-    background-image: linear-gradient(to right, rgb(64, 10, 64), white);
-    color: transparent;
+    -webkit-background-image: linear-gradient(to right, rgb(64, 10, 64), white);
+    -webkit-color: transparent;
+    -moz-color: transparent;
+    -moz-background-image: linear-gradient(to right, rgb(64, 10, 64), white);
     display: inline-block;
     -webkit-background-clip: text;
     -moz-background-clip: text;
