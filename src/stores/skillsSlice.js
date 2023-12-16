@@ -1,9 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { v4 as uuidv4 } from 'uuid';
-import myCV from "../assets/myDocuments/CV_Yusif-Huseynov.pdf"
 import WebDevelopmentPNG from "../assets/skillsCompnent/skills-WebDevelopment.png";
-import ITPNG from "../assets/skillsCompnent/skills-IT.png";
-import GraphicDesignerPNG from "../assets/skillsCompnent/skills-GraphicDesigner.png";
+import GraphicDesignerPNG from "../assets/skillsCompnent/skills-IT.png";
+import ITPNG from "../assets/skillsCompnent/skills-GraphicDesigner.png";
 import SoftSkillsPNG from "../assets/skillsCompnent/skills-SoftSkills.png";
 import HTML_PMG from "../assets/skillsCompnent/skill_Icon/html-5.png";
 import CSS_PNG from "../assets/skillsCompnent/skill_Icon/css-3.png";
@@ -24,15 +23,12 @@ import Windows_PNG from "../assets/skillsCompnent/skill_Icon/windows.png";
 import KaliLinux_PNG from "../assets/skillsCompnent/skill_Icon/Kali-dragon-icon.svg.png";
 import HardWare_PNG from "../assets/skillsCompnent/skill_Icon/cpu.png";
 import WindowsServer_PNG from "../assets/skillsCompnent/skill_Icon/server.png";
-import CheapFlyPNG from "../assets/projectComponent/ChepFly.jpg";
-import CheapFly_AdminPanelPNG from "../assets/projectComponent/chepFly-AdminPanel.jpg";
-import KapitalBankPNG from "../assets/projectComponent/Kapital Bank.jpg";
-import HangManPNG from "../assets/projectComponent/hangMan.jpg";
-import NegotiatingPNG from "../assets/projectComponent/negotiating.jpg";
-import TicTacToePNG from "../assets/projectComponent/TicTacToe.jpg";
+import i18next from "i18next";
+
 
 
 export const skillsSlice = createSlice({
+
   name: "skills",
   initialState: {
     currentCategory: undefined,
@@ -105,68 +101,8 @@ export const skillsSlice = createSlice({
           { id: uuidv4(), name: "Ability to work with Team" },
         ],
       },
-    ],
-    projects : [
-      {
-        id: uuidv4(),
-        name: "CheapFly",
-        usedTechnologies: [
-          MeteorJS_PNG,
-          BlazeJS_PNG,
-          HTML_PMG,
-          MongoDB_PNG,
-          CSS_PNG,
-          Tailwind_PNG,
-          BootStrap_PNG,
-        ],
-        view: CheapFlyPNG,
-        githubLink: "",
-      },
-      {
-        id: uuidv4(),
-        name: "CheapFly Admin",
-        usedTechnologies: [
-          MeteorJS_PNG,
-          BlazeJS_PNG,
-          HTML_PMG,
-          MongoDB_PNG,
-          CSS_PNG,
-          Tailwind_PNG,
-          BootStrap_PNG,
-        ],
-        view: CheapFly_AdminPanelPNG,
-        githubLink: "",
-      },
-      {
-        id: uuidv4(),
-        name: 'Negotiating',
-        usedTechnologies: [JS_PNG, HTML_PMG, CSS_PNG],
-        view: NegotiatingPNG,
-        githubLink: "",
-      },
-      {
-        id: uuidv4(),
-        name: "Kapital Bank",
-        usedTechnologies: [JS_PNG, HTML_PMG, CSS_PNG, BootStrap_PNG],
-        view: KapitalBankPNG,
-        githubLink: "https://github.com/enjoseph/Kapital-Bank-Web-site",
-      },
-      {
-        id: uuidv4(),
-        name: "Tic-Tac-Toe",
-        usedTechnologies: [JS_PNG, HTML_PMG, CSS_PNG],
-        view: TicTacToePNG,
-        githubLink: "",
-      },
-  
-      {
-        id: uuidv4(),
-        name: "HangMan",
-        usedTechnologies: [React_PNG, HTML_PMG, CSS_PNG],
-        view: HangManPNG,
-        githubLink: "https://github.com/enjoseph/React_HangMan",
-      },
     ]
+    
   },
 
   reducers: {

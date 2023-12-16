@@ -1,16 +1,17 @@
 .container {
-
-    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
+    padding-bottom: 7vh;
+    padding: 20vh 0;
+    padding-top: 10vh;
 }
 
 
 .contactUs {
     display: flex;
     width: 80%;
+    padding: 1vh;
     background-color: white;
     border-radius: 5vh;
     align-items: center;
@@ -47,7 +48,7 @@
     border: none;
     width: 40%;
     height: 103%;
-    background: linear-gradient(to right, rgb(75, 14, 67) ,rgb(107, 35, 175));
+    background: linear-gradient(to right, rgb(75, 14, 67), rgb(107, 35, 175));
 
 }
 
@@ -66,4 +67,48 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .contactUs {
+        height: 10vh;
+        width: 90%;
+        border-radius: 2vh;
+        margin: auto;
+    }
+
+    .container {
+        margin: auto;
+    }
+
+    .text h5 {
+        color: black;
+        font-size: 1.6vh;
+        font-weight: 100;
+        width: 90%;
+    }
+
+
+    .contactUsForm {
+        width: 50%;
+        border-radius: 2vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 7vh;
+        padding: 1vh;
+    }
+
+
+    .contactUsForm input:first-child {
+
+        border-radius: 1vh 0 0 1vh;
+    }
+    
+    .contactUsForm input:last-child {
+        border-radius: 0 1vh 1vh 0;
+    }
+    
 }

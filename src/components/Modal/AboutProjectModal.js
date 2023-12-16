@@ -70,7 +70,7 @@ export default function AboutProjectModal() {
         {!currentProject.githubLink ? (
           <a>
             {
-              "I cannot share the github link due to company confidentiality. :("
+              t("ProjectModal.notGithub")
             }
           </a>
         ) : (

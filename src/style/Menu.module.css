@@ -1,0 +1,74 @@
+.burgerMenu { display: none;}
+
+
+
+@media screen and (max-width: 767px) {
+
+    .burgerMenu {
+        position: fixed;
+        top: 8vh;
+        padding-top: 3vh;
+        width: 100%;
+        height: 37vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba(15, 15, 15, 0.814);
+        backdrop-filter: blur(10px);
+        z-index: 99999;
+    }
+
+    .burgerItem {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .burgerItem li {
+        text-align: center;
+        font-size: 3vh;
+        margin: 1vh 0 ;
+        width: max-content;
+        font-family: 'Monaco', 'Courier New', monospace , sans-serif;
+        font-weight: 600;
+    }
+
+    .burgerMenu ul:last-child {
+        display: flex;
+        height: max-content;
+        justify-content: space-evenly;
+    }
+
+
+    .burgerMenu ul:last-child a  {
+        margin: 5vh 0 ;
+    }
+
+
+    .burgerMenu ul:last-child div  {
+        border-radius: 3vh;
+    }
+
+
+    .SM_icon {
+        border: 1px solid lightgray;
+        background-color: lightgray;
+        padding: 1vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    .SM_icon:hover {
+        background-color: rgb(189, 189, 189);
+        transition: 0.6s;
+    }
+
+
+    .fa-brands {
+        background-color: red !important;
+    }
+
+}

@@ -9,30 +9,20 @@ import TR from "../assets/navbarComponent/tr.png";
 export const languageSlice = createSlice({
   name: "language",
   initialState: {
-    language: {
-     en: {
-      lang: 'EN',
-      IMG : EN
-     },
-     az: {
-      lang: 'AZ',
-      IMG : AZ
-     },
-     ru: {
-      lang: 'RU',
-      IMG : RU
-     },
-     tr: {
-      lang: 'TR',
-      IMG : TR
-     }
-    },
+    isActiveLang : false
   },
 
+
+  reducers : {
+   set_isActiveLang : (state , action) => { 
+    state.isActiveLang =  action.payload
+    }
+  
+  } 
 
 });
 
 
-export const {setLanguage} = languageSlice.actions
+export const {set_isActiveLang} = languageSlice.actions
 
 export default languageSlice.reducer;

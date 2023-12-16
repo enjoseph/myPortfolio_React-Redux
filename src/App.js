@@ -9,14 +9,12 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 function App() {
-
-  const {i18n} = useTranslation()
+  const { i18n } = useTranslation();
 
   // Set Languages
   useEffect(() => {
-   const setLang = localStorage.getItem("language")
-    if(setLang !== null) i18n.changeLanguage(setLang);
-
+    const setLang = localStorage.getItem("language");
+    if (setLang !== null) i18n.changeLanguage(setLang);
   }, []);
 
   return (

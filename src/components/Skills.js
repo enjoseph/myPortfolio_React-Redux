@@ -50,14 +50,14 @@ export default function Skills() {
   };
 
   const skillsBoxAnimation_Active = () => {
-    const SkillsComponent = document.getElementById("SkillsID");
+    const SkillsComponent = document.getElementById("skillsID");
     SkillsComponent.classList.add(SkillsStyle.rotateAnimation);
     setTimeout(() => {
       SkillsComponent.classList.remove(SkillsStyle.rotateAnimation);
     }, 1000);
   };
   return (
-    <section className={SkillsStyle.container} id="SkillsID">
+    <section className={SkillsStyle.container} id="skillsID">
     {currentCategory ? (
       <i className="fa-solid fa-left-long fa-bounce" onClick={closeSkill}></i>
     ) : undefined}
@@ -134,7 +134,7 @@ export default function Skills() {
         }
       })}
     </Carousel>
-    {currentSkills ? (
+    {currentSkills && currentSkills.icon ?  (
       <AboutModal/>
     ) : null}
   </section>

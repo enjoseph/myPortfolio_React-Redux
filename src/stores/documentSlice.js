@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import myCV from "../assets/myDocuments/CV_Yusif-Huseynov.pdf"
+import myCV from "../assets/myDocuments/CV_Yusif-Hüseynov.pdf"
 
 
 export const documentSlice = createSlice(  {

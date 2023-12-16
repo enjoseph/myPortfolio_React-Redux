@@ -65,7 +65,7 @@ export default function AboutSkillModal() {
                 }}
                 src={currentSkills.icon}
                 alt={currentSkills.name}
-                style={{ maxWidth: "86px", maxHeight: "86px" }}
+                style={{ }}
               />
               <h2>{currentSkills.name}</h2>
             </div>

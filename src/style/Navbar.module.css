@@ -9,8 +9,9 @@
     width: 96%;
     backdrop-filter: blur(10px);
     background-color: rgba(15, 15, 15, 0.493);
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
+
+
 
 .navItem {
     display: flex;
@@ -54,7 +55,6 @@
     margin-left: 5vh;
 }
 
-
 .navItem ul li {
     color: lightgray;
 }
@@ -80,33 +80,85 @@
 }
 
 
-.language {
-    width: 60px;
-    height: 40px;
-    overflow: hidden;
-    display: flex;
+
+
+.languages {
+    max-width: max-content;
     position: absolute;
-}
-
-.language:hover {
-    height: max-content;
-}
-
-.language ul {
-    flex-direction: column;
+    overflow: hidden;
+    transition: 0.3s;
+    height: 0;
     display: flex;
-    height: max-content;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 1vh;
 }
 
-.language ul li {
-    margin-bottom: 0.8vh;
-    cursor: pointer;
+.isActive {
+    height: 28vh;
+}
+
+.languages li {
+    padding: 1vh 0;
+}
+
+.BrandName img {
+    width: 12vh;
+    height:7vh;
+    margin: 1vh 0;
+}
+
+.BrandName {
+    width: 45%;
 }
 
 
-.languageContainer {
-    width: 60px;
-    height: 40px;
-    position: relative;
-    align-self: center;
+@media screen and (max-width: 767px) {
+
+    .BrandName img {
+        width: 12vh;
+        height:5vh;
+        
+    }
+
+
+    .BrandName {
+        width: 30%;
+    }
+    
+    .navItem {
+        display: none;
+    }
+
+    .isActive {
+        height: max-content !important;
+    }
+
+    .languages {
+        display: flex;
+        width: 80%;
+        max-width: 80%;
+        justify-content: space-evenly;
+        position: static;
+        overflow: hidden;
+        transition: 0.3s;
+        height: max-content;
+        flex-direction: row;
+        margin-top: 0;
+    }
+    
+    .languageContainer { 
+        display:flex ;
+        justify-content: space-between;
+        align-items: center;
+        width: 55%;
+        flex-direction: row-reverse;
+    }
+
+    .container {
+        height: 10vh;
+        width: 91%;
+        padding: 0 2vh;
+        display: flex;
+    }
 }

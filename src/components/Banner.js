@@ -3,15 +3,16 @@ import BannerStyle from "../style/Banner.module.css";
 import headerImg from "../assets/bannerComponent/HeaderImage.png";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
 
 export default function Banner() {
-
   const text = "Hi! I'm Joseph Web Developer";
   const [bannerText, set_bannerText] = useState("");
   const [loopNum, set_loopNum] = useState(0);
   const [isDeleting, set_isDeleting] = useState(false);
 
   const { t } = useTranslation();
+  const { CV } = useSelector((state) => state.document); 
 
   useEffect(() => {
     let ticker = setTimeout(() => {
@@ -47,7 +48,7 @@ export default function Banner() {
   };
 
   return (
-    <section className={BannerStyle.container}>
+    <section className={BannerStyle.container} id='homeID' >
       {/* Who am I ?*/}
       <motion.div
         initial={{ opacity: 0, translateX: "-100%" }}
@@ -61,11 +62,22 @@ export default function Banner() {
             {bannerText} <i className="fa-solid fa-i-cursor fa-fade"></i>
           </span>
         </h1>
-        <p className={BannerStyle.JobAbout}>{t("Banner.JobAbout")}</p>
-        <br />
-        <a href="#Contact">
-          {t("Banner.letsConnect")} <span>&#10147;</span>
-        </a>
+        <div>
+          <p className={BannerStyle.JobAbout}>{t("Banner.JobAbout")}</p>
+          <br />
+
+          {/* Mobil Section Start */}
+          <a href={CV} download className={BannerStyle.CV_BTN}>
+            <li >
+              {t("Navbar.downloadCV")}
+            </li>
+          </a>
+          {/* Mobil Section end */}
+
+          <a href="mailto:yusif.husynov994@gmail.com">
+            {t("Banner.letsConnect")}
+          </a>
+        </div>
       </motion.div>
 
       {/*Banner icon */}

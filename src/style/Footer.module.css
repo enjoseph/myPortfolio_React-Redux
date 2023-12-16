@@ -1,10 +1,11 @@
 .container {
+    width: 91%;
     height: 40vh;
     display: flex;
     justify-content: space-between;
     padding: 0 10vh 5vh 10vh;
     align-items: end;
-    background: linear-gradient(to bottom, black , rgb(59, 1, 59));
+    background: linear-gradient(to bottom, black, rgb(59, 1, 59));
 }
 
 .contactUS ul {
@@ -12,25 +13,76 @@
     width: max-content;
 }
 
-.contactUS ul li {
-    font-size: 2.5vh;
-    margin: 0 1vh;
-    border: 1px solid lightgray;
-    background-color: rgb(34, 34, 34);
-    border-radius: 50%;
-    padding: 1vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.contactUS ul i {
+margin:  0 0.5vh 0 3vh;
 }
 
-.container  h5 {
+.contactUS ul a:hover {
+    scale: 1.1;
+}
+
+.contactUS ul a {
+    transition: 0.2
+    s;
+
+}
+
+.container h5 {
     font-size: 5vh;
-    font-family: monospace;
+    font-family: monospace ,sans-serif;
     font-weight: 100;
 }
 
 .contactUS p {
     margin-top: 2vh;
-    font-family: monospace;
+    font-family: monospace ,sans-serif;
+}
+
+.BrandName img {
+    width: 40vh;
+    height: 20vh;
+}
+
+@media screen and (max-width: 767px) {
+    .container h5 {
+        font-size: 2.5vh;
+        font-family: monospace ,sans-serif;
+        font-weight: 100;
+        margin-bottom: 3vh;
+    }
+
+    .container {
+        width:97%;
+        height: 20vh;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1vh 0 1vh;
+        align-items: center;
+        background:black ;
+    }
+
+    .contactUS p {
+        margin-top: 2vh;
+        font-size: 1vh;
+        font-family: monospace ,sans-serif;
+    }
+
+    .BrandName img {
+        width: 18vh;
+        height: 8vh;
+        content: url('../assets/Logo/logo.png');
+    }
+
+    .contactUS ul  i {
+        font-size: 2vh !important;
+    }
+
+    .contactUS ul  {
+        display: flex ;
+        flex-direction: column;
+    }
+
+    .contactUS ul  a {
+        line-height: 2.5;
+    }
 }

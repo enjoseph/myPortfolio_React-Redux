@@ -3,9 +3,9 @@
     align-items: center;
     width: 90%;
     margin: auto;
-    justify-content:end;
+    justify-content: end;
     height: 100vh;
-    padding: 5vh 0 5vh 3vh;
+    padding: 1vh 0 5vh 3vh;
 }
 
 .text {
@@ -30,14 +30,14 @@
 .myJob {
     font-size: 8vh;
     margin-bottom: 2vh;
-    font-family: monospace;
+    font-family: monospace sans-serif;
     height: 20vh;
     width: 90%;
 }
 
 .JobAbout {
     line-height: 1.5;
-    font-family: monospace;
+    font-family: monospace , sans-serif;
     font-size: 2vh;
     color: rgb(187, 187, 187);
 }
@@ -64,7 +64,7 @@
     height: max-content;
     margin-left: 1vh;
 
-    font-family: monospace
+    font-family: monospace , sans-serif;
 }
 
 
@@ -75,13 +75,33 @@
     justify-content: flex-end
 }
 
+.CV_BTN {
+    display: none !important;
+}
 
 .headerImage img {
     animation: jumping 2s ease-in-out infinite;
-    position: relative; 
+    position: relative;
+}
+
+.myJob span {
+    background-image: linear-gradient(to right, rgb(64, 10, 64), white);
+    color: transparent;
+    display: inline-block;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
 }
 
 
+.text div:last-child a {
+    font-family: sans-serif;
+    padding: 1.5vh 3vh;
+    font-size: 2vh;
+    border-radius: 3vh;
+    margin-bottom: 0;
+    color:blanchedalmond;
+    background-image: linear-gradient(to right, rgb(29, 26, 28), #490c45);
+}
 
 @keyframes jumping {
     0% {
@@ -99,5 +119,90 @@
         bottom: 0;
         left: 0;
 
+    }
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+    .container {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+        justify-content: start;
+        height:90vh;
+        display: flex;
+        flex-direction: column;
+        padding-top: 6vh;
+    }
+
+    .myJob {
+        padding-top: 3vh;
+        margin-bottom: 2vh;
+        font-family: monospace,sans-serif ;
+        height: 20vh;
+        text-align: center;
+        width: 100%;
+        margin: 5vh auto;
+        color: purple !important;
+        margin-bottom: 0;
+    }
+
+    .text {
+        height: max-content;
+    }
+
+    .myJob span {
+        background-image: linear-gradient(to right, rgb(64, 10, 64), white);
+        color: transparent;
+        display: inline-block;
+        font-size: 4.2vh;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+    }
+
+    .welcomeText {
+        display: none;
+    }
+
+
+    .text div:last-child {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .text div:last-child a {
+        font-family: sans-serif;
+        padding: 1.5vh 3vh;
+        font-size: 2vh;
+        border-radius: 3vh;
+        margin: 5vh auto;
+        margin-bottom: 0;
+        background-image: linear-gradient(to right, #ff7e5f, #490c45);
+    }
+
+    .JobAbout {
+        display: none;
+    }
+
+    .headerImage {
+        width: 100%;
+        margin-top: 3vh;
+    }
+
+    .headerImage img {
+        animation: none;
+        background-color: rgb(1, 1, 1);
+        border-radius: 50%;
+    }
+
+
+    .CV_BTN {
+        display: block !important;
+        border: 1px solid #ff7e5f ;
+        background: transparent !important;
+        margin-top: 2.5vh !important;
     }
 }

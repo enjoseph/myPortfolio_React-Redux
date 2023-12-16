@@ -8,6 +8,10 @@
     border-radius: 50%;
 }
 
+.content img {
+    max-width: 86px; 
+    max-height: 86px; 
+}
 .box {
     position: relative;
     display: flex;
@@ -38,12 +42,12 @@
     font-size: 35px;
     font-weight: 600;
     margin-right: 5px;
-    font-family: monospace;
+    font-family: monospace , sans-serif;
 }
 
 .box .number .sub {
     font-size: 20px;
-    font-family: monospace;
+    font-family: monospace , sans-serif;
 
 }
 
@@ -103,7 +107,7 @@
     width: 100%;
     text-align: center;
     font-size: small;
-    font-family: monospace;
+    font-family: monospace , sans-serif;
 }
 
 .container {
@@ -117,7 +121,7 @@
 
 
 .content h2 {
-    font-family: monospace;
+    font-family: monospace , sans-serif;
 }
 
 
@@ -127,7 +131,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .text {
@@ -155,4 +158,54 @@
     cursor: pointer;
     z-index: 10001;
     background-color: rgba(0, 0, 0, 0.5); /* Saydam veya yarı saydam arkaplan */
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+
+    .modalMain {
+        width: 90%;
+        height: 30vh !important;
+        background-color: #292929;
+        margin: auto;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        padding: 1vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: max-content;
+        border-radius: 1rem;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        
+    }
+
+
+    .content img {
+        max-width: 56px !important;
+
+    }
+
+    
+.content h2 {
+    font-size: 3.5vh;
+}
+
+.text {
+    padding-left: 0vh;
+}
+
+.modalMain h5 {
+    position: absolute;
+    top: -4.5vh;
+    right: 0.5vh;
+    width: 100%;
+    text-align: center;
+    font-size: small;
+    font-family: monospace , sans-serif;
+}
+
 }
