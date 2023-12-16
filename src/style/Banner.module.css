@@ -37,7 +37,7 @@
 
 .JobAbout {
     line-height: 1.5;
-    font-family: monospace , sans-serif;
+    font-family: monospace, sans-serif;
     font-size: 2vh;
     color: rgb(187, 187, 187);
 }
@@ -64,7 +64,7 @@
     height: max-content;
     margin-left: 1vh;
 
-    font-family: monospace , sans-serif;
+    font-family: monospace, sans-serif;
 }
 
 
@@ -101,7 +101,7 @@
     font-size: 2vh;
     border-radius: 3vh;
     margin-bottom: 0;
-    color:blanchedalmond;
+    color: blanchedalmond;
     background-image: linear-gradient(to right, rgb(29, 26, 28), #490c45);
 }
 
@@ -134,7 +134,7 @@
         width: 90%;
         margin: auto;
         justify-content: start;
-        height:90vh;
+        height: 90vh;
         display: flex;
         flex-direction: column;
         padding-top: 6vh;
@@ -143,12 +143,11 @@
     .myJob {
         padding-top: 3vh;
         margin-bottom: 2vh;
-        font-family: monospace,sans-serif ;
+        font-family: monospace, sans-serif;
         height: 20vh;
         text-align: center;
         width: 100%;
         margin: 5vh auto;
-        color: purple !important;
         margin-bottom: 0;
     }
 
@@ -157,8 +156,10 @@
     }
 
     .myJob span {
-        background-image: linear-gradient(to right, rgb(64, 10, 64), white);
-        color: transparent;
+        -webkit-background-image: linear-gradient(to right, rgb(64, 10, 64), white);
+        -moz-background-image: linear-gradient(to right, rgb(64, 10, 64), white);
+        -moz-color: transparent;
+        -webkit-color: transparent;
         display: inline-block;
         font-size: 4.2vh;
         -webkit-background-clip: text;
@@ -203,7 +204,7 @@
 
     .CV_BTN {
         display: block !important;
-        border: 1px solid #ff7e5f ;
+        border: 1px solid #ff7e5f;
         background: transparent !important;
         margin-top: 2.5vh !important;
     }
