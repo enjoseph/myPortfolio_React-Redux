@@ -14,7 +14,6 @@ import { set_isActiveLang } from "../stores/languageSlice";
 import logo from "../assets/Logo/logo.png";
 
 export default function Navbar() {
-  console.log("Rendering Navbar");
   const { CV } = useSelector((state) => state.document);
 
   const { isActive } = useSelector((state) => state.burgerMenu);
@@ -45,7 +44,6 @@ export default function Navbar() {
   const { t, i18n } = useTranslation();
 
   const navItem = ["home", "skills", "projects"];
-  console.log(isActiveLang + 'nAVBAR');
 
   const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -75,7 +73,6 @@ export default function Navbar() {
 
   const handleClickLang = () => {
     dispatch(set_isActiveLang(!isActiveLang));
-    console.log(isActiveLang);
   };
 
 

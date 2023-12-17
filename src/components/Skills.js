@@ -45,7 +45,6 @@ export default function Skills() {
 
   const helperCurrentCategory = (e) => {
     dispatch(setCurrentCategory(e.target.id));
-    console.log(e.target.id);
     skillsBoxAnimation_Active();
   };
 

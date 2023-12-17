@@ -8,7 +8,6 @@ import { useTranslation } from "react-i18next";
 export default function AboutSkillModal() {
   const dispatch = useDispatch();
   const { currentSkills } = useSelector((state) => state.skills);
-  console.log('Rendering AboutSkillModal');
 
   const {t} = useTranslation()
 

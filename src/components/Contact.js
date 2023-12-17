@@ -5,7 +5,6 @@ import { useTranslation } from "react-i18next";
 
 export default function Contact() {
 
-console.log('Rendering Contact');
 
   const { t } = useTranslation()
 

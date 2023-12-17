@@ -6,7 +6,6 @@ import { useTranslation } from "react-i18next";
 
 export default function AboutProjectModal() {
   const { currentProject } = useSelector((state) => state.projects);
-  console.log('Rendering AboutProjectModal');
   const container = {
     hidden: { opacity: 1, scale: 0 },
     visible: {

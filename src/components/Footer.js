@@ -5,7 +5,6 @@ import { useTranslation } from "react-i18next";
 import logo from '../assets/Logo/logoFooter.png'
 
 export default function Footer() {
-  console.log('Rendering Footer');
 
   const {t} = useTranslation()
 
