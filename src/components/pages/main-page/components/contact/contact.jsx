@@ -1,11 +1,12 @@
 import React from "react";
-import ContactStyle from "../style/Contact.module.css";
-import ContactPNG from "../assets/contactComponent/contactPNG.png";
+
+// Style Module
+import ContactStyle from "./contact.module.css";
+
+// i18Next
 import { useTranslation } from "react-i18next";
 
 export default function Contact() {
-
-
   const { t } = useTranslation()
 
   return (

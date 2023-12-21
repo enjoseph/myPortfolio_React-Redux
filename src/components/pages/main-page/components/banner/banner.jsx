@@ -1,8 +1,18 @@
 import React, { useEffect, useState } from "react";
-import BannerStyle from "../style/Banner.module.css";
-import headerImg from "../assets/bannerComponent/HeaderImage.png";
+
+// Style Module
+import BannerStyle from "./banner.module.css";
+
+// Import Icon
+import headerImg from "../../../../../assets/bannerComponent/HeaderImage.png";
+
+// Framer Motion
 import { motion } from "framer-motion";
+
+// i18next
 import { useTranslation } from "react-i18next";
+
+// Redux 
 import { useSelector } from "react-redux";
 
 export default function Banner() {

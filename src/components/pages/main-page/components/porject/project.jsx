@@ -1,16 +1,26 @@
-import React, { useEffect, useState } from "react";
-import ProjectStyle from "../style/Project.module.css";
-import AboutProjectModal from "./Modal/AboutProjectModal";
-import TabComponent from "./TabComponent";
+import React, {  useState } from "react";
+
+// Style Module
+import ProjectStyle from "./project.module.css";
+
+// Modal
+import AboutProjectModal from "../../Modal/about-project-modal/about-Project-Modal.jsx";
+
+// Tab Component 
+import TabComponent from "./tab-component/tab-component";
+
+// Swiper Carusel
 import { Swiper, SwiperSlide } from "swiper/react";
-import { useDispatch, useSelector } from "react-redux";
-import { setCurrentProject } from "../stores/projectsSlice";
-import { useTranslation } from "react-i18next";
 import { EffectCards } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 
+// Redux
+import { useDispatch, useSelector } from "react-redux";
+import { setCurrentProject } from "../../../../../stores/projectsSlice";
 
+// i18next
+import { useTranslation } from "react-i18next";
 
 export default function Project() {
   const { t } = useTranslation();

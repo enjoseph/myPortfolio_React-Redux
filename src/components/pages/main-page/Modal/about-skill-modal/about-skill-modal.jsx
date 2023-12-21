@@ -1,8 +1,16 @@
 import React, { useEffect, useState } from "react";
-import AboutModalStyle from "../../style/Modal/AboutSkillModal.module.css";
+
+// Style Module
+import AboutModalStyle from "./about-skill-modal.module.css";
+
+// Framer Motion
 import { motion } from "framer-motion";
-import { setCurrentSkills } from "../../stores/skillsSlice";
+
+// Redux
+import { setCurrentSkills } from "../../../../../stores/skillsSlice";
 import { useDispatch, useSelector } from "react-redux";
+
+// i18next
 import { useTranslation } from "react-i18next";
 
 export default function AboutSkillModal() {

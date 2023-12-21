@@ -1,17 +1,25 @@
 import React, { useState } from "react";
-import NavbarStyle from "../style/Navbar.module.css";
+
+// Style Module
+import NavbarStyle from "./navbar.module.css";
+
+// Framer Motion
 import { color, motion } from "framer-motion";
+
+// Redux 
 import { useDispatch, useSelector } from "react-redux";
+
+// i18next
 import { useTranslation } from "react-i18next";
 
-import EN from "../assets/navbarComponent/eng.png";
-import AZ from "../assets/navbarComponent/aze.png";
-import RU from "../assets/navbarComponent/rus.png";
-import TR from "../assets/navbarComponent/tr.png";
-import MenuComponent from "./MenuComponent";
-import { setIsActive } from "../stores/burgerMenuSlice";
-import { set_isActiveLang } from "../stores/languageSlice";
-import logo from "../assets/Logo/logo.png";
+import EN from "../../../../../assets/navbarComponent/eng.png";
+import AZ from "../../../../../assets/navbarComponent/aze.png";
+import RU from "../../../../../assets/navbarComponent/rus.png";
+import TR from "../../../../../assets/navbarComponent/tr.png";
+import MenuComponent from "./menu-component/menu-component";
+import { setIsActive } from "../../../../../stores/burgerMenuSlice";
+import { set_isActiveLang } from "../../../../../stores/languageSlice";
+import logo from "../../../../../assets/Logo/logo.png";
 
 export default function Navbar() {
   const { CV } = useSelector((state) => state.document);

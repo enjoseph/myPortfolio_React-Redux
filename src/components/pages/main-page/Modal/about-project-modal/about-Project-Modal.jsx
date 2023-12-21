@@ -1,7 +1,15 @@
-import AboutProjectModalStyle from "../../style/Modal/AboutProjectModal.module.css";
+
+// Style Module
+import AboutProjectModalStyle from "./about-project-modal.module.css";
+
+// Framer Motion
 import { motion } from "framer-motion";
+
+// Redux
 import { useDispatch, useSelector } from "react-redux";
-import {setCurrentProject} from '../../stores/projectsSlice'
+import {setCurrentProject} from '../../../../../stores/projectsSlice'
+
+// i18next
 import { useTranslation } from "react-i18next";
 
 export default function AboutProjectModal() {

@@ -1,12 +1,24 @@
-import React, { useEffect, useState } from "react";
-import SkillsStyle from "../style/Skills.module.css";
+import React from "react";
+
+// Style Module
+import SkillsStyle from "./skills.module.css";
+
+// Multi Carusel 
 import Carousel from "react-multi-carousel";
-import AboutModal from "./Modal/AboutSkillModal";
 import "react-multi-carousel/lib/styles.css";
+
+// Modal 
+import AboutModal from "../../Modal/about-skill-modal/about-skill-modal.jsx";
+
+// Framer Motion
 import { motion } from "framer-motion";
+
+// Redux
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
-import { setCurrentCategory, setCurrentSkills } from "../stores/skillsSlice";
+import { setCurrentCategory, setCurrentSkills } from "../../../../../stores/skillsSlice";
+
+// i18next
 import { useTranslation } from "react-i18next";
 
 export default function Skills() {

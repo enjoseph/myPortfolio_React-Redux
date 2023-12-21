@@ -1,4 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
+
+// Reducer
 import languageReducer from './languageSlice'
 import skillsReducer from  './skillsSlice'
 import projectsReducer from './projectsSlice'

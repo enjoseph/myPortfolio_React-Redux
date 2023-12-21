@@ -1,6 +1,7 @@
 import React from "react";
 
-import { setIsActive } from "../stores/projectsSlice";
+// Redux
+import { setIsActive } from "../../../../../../stores/projectsSlice";
 import { useDispatch } from "react-redux";
 
 export default function TabComponent({ index }) {

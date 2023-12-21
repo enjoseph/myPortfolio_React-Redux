@@ -1,5 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
+
+// Random ID
 import { v4 as uuidv4 } from 'uuid';
+
+// Import Icon
 import HTML_PMG from "../assets/skillsCompnent/skill_Icon/html-5.png";
 import CSS_PNG from "../assets/skillsCompnent/skill_Icon/css-3.png";
 import BootStrap_PNG from "../assets/skillsCompnent/skill_Icon/bootstrap.png";

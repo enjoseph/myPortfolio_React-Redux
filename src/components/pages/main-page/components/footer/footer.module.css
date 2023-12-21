@@ -1,5 +1,5 @@
 .container {
-    width: 91%;
+    min-width: 90%;
     height: 40vh;
     display: flex;
     justify-content: space-between;
@@ -38,12 +38,18 @@ margin:  0 0.5vh 0 3vh;
     font-family: monospace ,sans-serif;
 }
 
-.BrandName img {
-    width: 40vh;
-    height: 20vh;
+.BrandName {
+    max-width: 70%;
+    max-height: 20vh;
 }
 
-@media screen and (max-width: 767px) {
+.BrandName img {
+    max-width: 70%;
+    max-height: 20vh;
+}
+
+@media screen and (max-width: 820px) {
+
     .container h5 {
         font-size: 2.5vh;
         font-family: monospace ,sans-serif;
@@ -69,9 +75,9 @@ margin:  0 0.5vh 0 3vh;
     }
 
     .BrandName img {
-        width: 18vh;
-        height: 8vh;
-        content: url('../assets/Logo/logo.png');
+       min-width: 18vh;
+        min-height: 8vh;
+        content: url('../../../../../assets/Logo/logo.png');
     }
 
     .contactUS ul  i {

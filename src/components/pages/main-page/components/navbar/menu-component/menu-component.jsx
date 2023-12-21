@@ -1,12 +1,22 @@
 import React from "react";
-import Style from "../style/Menu.module.css";
-import { color, motion } from "framer-motion";
+
+// Style Module 
+import Style from "./menu.module.css";
+
+// Framer Motion
+import {  motion } from "framer-motion";
+
+// i18next
 import { useTranslation } from "react-i18next";
-import { useDispatch, useSelector } from "react-redux";
-import { setIsActive } from "../stores/burgerMenuSlice";
+
+// Redux
+import { useDispatch } from "react-redux";
+
+//Reducer
+import { setIsActive } from "../../../../../../stores/burgerMenuSlice";
 
 export default function MenuComponent({ navItem }) {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const dispatch = useDispatch()
 

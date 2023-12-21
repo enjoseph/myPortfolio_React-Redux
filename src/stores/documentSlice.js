@@ -1,4 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
+
+// Import Icon
 import myCV from "../assets/myDocuments/CV_Yusif-Hüseynov.pdf"
 
 
@@ -17,7 +19,6 @@ export const documentSlice = createSlice(  {
 
 
 
-export const {} = documentSlice.actions
 
 
 export default documentSlice.reducer

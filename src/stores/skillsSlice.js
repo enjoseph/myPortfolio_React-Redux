@@ -1,5 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
+
+// Random ID
 import { v4 as uuidv4 } from 'uuid';
+
+// Import Icon
 import WebDevelopmentPNG from "../assets/skillsCompnent/skills-WebDevelopment.png";
 import GraphicDesignerPNG from "../assets/skillsCompnent/skills-IT.png";
 import ITPNG from "../assets/skillsCompnent/skills-GraphicDesigner.png";
@@ -23,7 +27,6 @@ import Windows_PNG from "../assets/skillsCompnent/skill_Icon/windows.png";
 import KaliLinux_PNG from "../assets/skillsCompnent/skill_Icon/Kali-dragon-icon.svg.png";
 import HardWare_PNG from "../assets/skillsCompnent/skill_Icon/cpu.png";
 import WindowsServer_PNG from "../assets/skillsCompnent/skill_Icon/server.png";
-import i18next from "i18next";
 
 
 

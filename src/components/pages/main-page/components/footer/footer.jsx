@@ -1,8 +1,14 @@
 import React from "react";
-import FooterStyle  from '../style/Footer.module.css'
-import { motion } from "framer-motion";
+
+// Style Module
+import FooterStyle  from './footer.module.css'
+
+// i18next
 import { useTranslation } from "react-i18next";
-import logo from '../assets/Logo/logoFooter.png'
+
+// Import Icon
+import logo from '../../../../../assets/Logo/logoFooter.png'
+
 
 export default function Footer() {
 
